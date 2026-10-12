@@ -5,7 +5,7 @@ from battle import attack
 def main():
     print("=== RPG BATTLE ===")
     
-    character = Character("Knight",100,20)
+    character = Character("Knight",120,25)
     enemy = Enemy("Goblin",60,10, "Monster")
     inventory = Inventory()
 
