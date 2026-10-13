@@ -1,3 +1,5 @@
+import random
+
 def attack(attacker, defender):
     # Lấy attack_power của attacker
     damage = attacker.attack_power
@@ -13,3 +15,11 @@ def critical_attack(attacker,defender):
 
     print(f"{attacker.name} lands a CRITICAL HIT on {defender.name}!")
     print(f"{defender.name} HP: {defender.health} ")
+
+def random_attack(attacker,defender):
+    chance = random.random()
+
+    if chance < 0.2 :
+        critical_attack(attacker,defender)
+    else:
+        attack(attacker,defender)

@@ -1,1 +1,1 @@
-from .combat import attack,critical_attack
+from .combat import attack, critical_attack, random_attack
